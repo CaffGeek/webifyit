@@ -6,5 +6,7 @@ Vagrant.configure(2) do |config|
 	
 	config.vm.network "forwarded_port", guest: 1337, host: 8337
 	
-	config.vm.provision "shell", path: "sh/provision.sh"	
+	config.vm.synced_folder ".", "/vagrant"
+		
+	config.vm.provision "shell", path: "sh/provision.sh"
 end

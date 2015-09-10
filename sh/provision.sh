@@ -21,5 +21,4 @@ apt-get install -y nodejs
 
 # Start Node server
 npm install -g forever
-forever start /vagrant/server.js --watch --watchDirectory /vagrant
-forever list
+forever start --sourceDir /vagrant --workingDir /vagrant --watchDir /vagrant --watch server.js 
