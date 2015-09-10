@@ -19,8 +19,7 @@ add-apt-repository -y ppa:chris-lea/node.js
 apt-get update
 apt-get install -y nodejs
 
-
 # Start Node server
 npm install -g forever
-forever start /vagrant/server.js
+forever start /vagrant/server.js --watch --watchDirectory /vagrant
 forever list
