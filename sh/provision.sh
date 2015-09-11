@@ -18,7 +18,15 @@ apt-get install -y python-software-properties python g++ make
 add-apt-repository -y ppa:chris-lea/node.js
 apt-get update
 apt-get install -y nodejs
+apt-get install screen
 
-# Start Node server
-npm install -g forever
-forever start --sourceDir /vagrant --workingDir /vagrant --watchDir /vagrant --watch server.js 
+npm install supervisor -g
+chmod +x /vagrant/sh/startup.sh
+
+sudo cat > /etc/init/vagrant-mounted.conf << EOL
+start on vagrant-mounted
+echo "!!!STARTING NODE IN A SCREEN!!!"
+exec sudo screen -d -m /vagrant/sh/startup.sh
+EOL
+
+screen -d -m /vagrant/sh/startup.sh

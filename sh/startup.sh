@@ -1,0 +1,1 @@
+supervisor --watch /vagrant /vagrant/server.js
