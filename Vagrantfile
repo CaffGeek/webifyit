@@ -9,4 +9,5 @@ Vagrant.configure(2) do |config|
 	config.vm.synced_folder ".", "/vagrant"
 		
 	config.vm.provision "shell", path: "sh/provision.sh"
+	config.vm.provision "shell", path: "sh/startup.sh", run: "always"
 end
