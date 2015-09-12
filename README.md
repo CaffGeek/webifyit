@@ -1,1 +1,1 @@
-hello world
+[![Code Climate](https://codeclimate.com/github/CaffGeek/webifyit/badges/gpa.svg)](https://codeclimate.com/github/CaffGeek/webifyit)
