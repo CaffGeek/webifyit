@@ -6,7 +6,7 @@ This repo is a starting point for a nodejs server running in vagrant.
 It uses node-supervisor to watch for changes made in the host machine, and restarts node.js on the server.
 
 #Usage
-1. install [Git](http://git)
+1. install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. install [Vagrant](http://vagrantup.com)
 3. install [Virtual Box](https://www.virtualbox.org)
 4. clone this repo `git clone https://github.com/CaffGeek/webifyit.git`
