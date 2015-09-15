@@ -1,4 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/CaffGeek/webifyit/badges/gpa.svg)](https://codeclimate.com/github/CaffGeek/webifyit)
+[![Coverage Status](https://coveralls.io/repos/CaffGeek/webifyit/badge.svg?branch=master&service=github)](https://coveralls.io/github/CaffGeek/webifyit?branch=master)
 
 This repo is a starting point for a nodejs server running in vagrant.
 
