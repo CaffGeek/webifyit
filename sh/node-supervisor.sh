@@ -1,1 +1,1 @@
-supervisor --watch /vagrant /vagrant/server.js
+supervisor -i '.vagrant,node_modules,sh' server.js 
