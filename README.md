@@ -10,4 +10,7 @@ It uses node-supervisor to watch for changes made in the host machine, and resta
 2. install [Vagrant](http://vagrantup.com)
 3. install [Virtual Box](https://www.virtualbox.org)
 4. clone this repo `git clone https://github.com/CaffGeek/webifyit.git`
-5. run `vagrant up` from the webifyit folder
+5. add this plugin to sync virtual box guest additions between host and guest 
+   `vagrant plugin install vagrant-vbguest`
+6. run `vagrant up` from the webifyit folder
+7. from host machine, navigate to [http://localhost:8337](http://localhost:8337) to view the page
