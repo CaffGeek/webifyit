@@ -8,7 +8,7 @@ It uses node-supervisor to watch for changes made in the host machine, and resta
 #Usage
 1. install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. install [Vagrant](http://vagrantup.com)
-3. install [Virtual Box](https://www.virtualbox.org)
+3. ~~install [Virtual Box](https://www.virtualbox.org)~~
 4. clone this repo `git clone https://github.com/CaffGeek/webifyit.git`
 5. add this plugin to sync virtual box guest additions between host and guest 
    `vagrant plugin install vagrant-vbguest`
